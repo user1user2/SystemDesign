@@ -1,0 +1,15 @@
+Agends:
+     OOPS,abstract-(Func,class),final-(variable,data-member,func,class)
+     Inheretence,(Comparable,Comparator),(Iterable,Iterator)
+     object-(toString,hashcode,equals)
+
+Final -(variable) -->reassign not alllowed. (variable,data member)
+      -(func)-->over-ride not allowed.if we use final to an array.
+               Do,s:
+                  we can change the values.
+               Donts:
+                 we cant assign new size--> a = new Int(33);
+                 we cant assign new location to the final array.
+
+tasks:
+  override ,overloade,static vaiabls and functions calls.

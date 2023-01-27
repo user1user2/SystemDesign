@@ -1,0 +1,31 @@
+Agends:
+     Final,ABstract,Interfaces,Comparable-Comparator,Iterable-Iterator,object-toString,hashcode,equals.
+
+     Inheitence vs composition(preferd).
+
+     Abstraction-independence Modularity
+     abstract: 
+            class: No-object created-->Employee class deried as HR or S/W Employeye so Employee is an abstract to place comman functions.
+    
+    Abstact class:
+       if a class is extended to a abstract class, then all the abstract menthods need to create body in that calss.
+       if we dont use a abstract function from extended class then we must declare abstract to the the class.If we use the abstract function form extended abstract-class then we dont need to
+       use abstract keyword to class.
+    Abstact func:
+
+    Reflection : creating object with out new() keywork. 
+            Modularity--make flexibility and security.
+
+
+    Interfaces:
+           All functions are abstract,no-shared data-members.
+           similar to abstract class but extream version to it when all funcs are abstract.
+           Ex: Collection Frame Work
+           It hav only static data-members but in abstract have instance data-members
+           I-I (extends) .
+           Interfaces data-member are static and final
+
+           class cant derive 2 abstract class but can derive n no.of interfaces.
+
+
+programes: F7

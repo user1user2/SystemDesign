@@ -1,0 +1,61 @@
+Agends:
+     OOP's,Constructors,Inheretence,Polymorphisum,final,abstract,interfaces.
+Constructer: Default-Constructer==>No parameters, default created by java
+             Paramiterised-Constructer==>assign parameter to in.
+
+             when we initalized object/object creation  using new(), steps followed:
+
+Space Allocation: --nonstatic data-member space allowed in object creation and this is alllowed and default value assigned to it.
+        Default values to all data members during object creation non-static.
+                 byte,int,short,long-->0
+                 float,double       -->0.0
+                 char               -->/0
+                 boolean            -->false   
+                 others             -->null
+
+prasing:  After default values on object creation if we assign any values to the data-members they are assigned to the object .   
+
+Constructer : 
+           Default Constructer --> No parameters,values can be assign/Initilized after the prasing 
+           parameter Constructer--> Initilizing the Data Member in constructor 
+           Dynamic --> which reqired runtime execution Non-Dynamic-->direct known values;
+
+
+           On object creation Student s = new Student() the steps involves:
+           Space-Allocation --- > Parsing--> this
+
+           constructor-chaining: calling the other constructors inside a Constructer -- 
+           Ex: class A(){
+               System.out.println("THis is constructor A");
+           }
+           class B(){
+
+           }
+           class B(){
+               this();
+               System.out.println(THis is constructor B");
+           }
+     Static-Block: to assign the staic members like dynamic-data properties :
+            syntax{
+               //
+            }
+
+Nonstatic inner-class:-->reqired the outer obj creation and call the inner non-staic class,
+static inner-calss : -- > direct object creation; 
+
+Inheretence and Polymorphisum:
+p*c --p*p,p*c(conpile-time,when call to class data),c*c,c*p(runtime-error) make it halt at compile time  and final--variable,data member,func,class and abstract-->class,func
+Student s = new child();
+compile-time:  (less-sever)  (progemaer) (lhs: student reference)    (type-cast to work compile errors)
+run-time:      (high-alert)  (user)      (rhs: child object creation)
+
+Polymorphisum:one name multible forms.
+  runtime-Polymorphisum: same function name with same parameters
+  compile-time Polymorphisum: same function name but diff in parameters
+
+Copy-constructor:
+true Copy-constructor in c++,not in java.
+
+
+
+programes:F5(constructor-chaining),F6()

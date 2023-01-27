@@ -1,0 +1,24 @@
+Static data-members:
+         should be changed using class not object name,we can do by object but its a bad practice.
+Warning(" static modification should done through class not from object").
+
+Static Function:
+    These static-Function , we are dont need to use object creation.
+    This keyword is not used in static .            --> Because object instace done only for local data members for static variable, object initalized in main class.
+    non-static members not used in static Function. -- > when instanciation of non-static function reqired object creation but static not, so its related to object call.
+    non-static Function cant use in staic Function's.-->  we can use, but we reired to create a obj of non-static function inside the static function.
+    
+    State-full: sotage and operation will done.      
+    state-less: no storage exist, new request new operation Ex:Math.min,Math.max,Arrays.sort,RESTfulA API'should
+
+    Inheritence and Polymorphisum:
+    Inheritence:
+
+    Compile-TIme : will check on Refrence  on object creation
+    Run-TIme:  will check on RHS instance on object creation
+    conflit-resolve by runtime/Refrence
+
+
+
+
+    programes:F4

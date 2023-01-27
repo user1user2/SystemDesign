@@ -1,0 +1,22 @@
+OOPS1:
+OOPS2:
+OOPS3:(SOLID)
+
+OOPS1:
+Classes and Objects (Encapsulation)
+
+Activites of a real-entity are functions and Entities of a real-world are data members.
+Person p = new Person()
+Person p1 = p; -- Reference not an Instance, Both are refer to the same instance;
+Instance( new() - keyword),Reference( p )
+
+
+Static variables are instalised and stored in main class instance when we create a instance of a class and the local variable get initilized but the static vaiable is 
+refered from the main class object.
+
+static function -- not use "this"-keyword non-static function use the "this"-keyword
+
+
+Programes: F1,F2,F3,Bank
+
+    

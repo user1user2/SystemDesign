@@ -1,0 +1,11 @@
+Lamdafunction:
+OOPS:
+    static,Final,Inheritence
+LLD: 
+    SOLID principles,
+    Design Pattrens:
+                                 Single Design Pattrens,Flyway Design Pattren,Observer Design Pattrens,Decorater ...23 Design Pattrens
+   Stories
+
+HLD:
+  Stories,DB{SQL,NOSQL,Proxy,Quries}
