@@ -1,0 +1,111 @@
+//Java new Features in Java-8 :
+
+Lamda Expresiions and streams:
+
+Ex: Car aompany need to list maoung vehicals that how many of them are travelkled distance of <50k
+1://native approach 
+  static List<Car> getCarData(List<Car> data){
+    List<Car> res =  new List<>();
+    for(Car : data){
+        if(car.distance <50000){
+            res.add(car);
+
+        }
+    }
+    return res;
+
+  }
+  //using upated lamda and streams
+
+  static List<Car> getCarData(List<Car> data){
+    return data.streams().filter(x --> x <50000).collect(Collection.toList());
+
+  }
+
+  2> Method References:
+
+  To print all the cars in the delership shop we use method references.
+  It allows us to call functions in classes in special-kind (::). --> we have 4 kinds of References.
+     1> Reference to a static method.
+     2> Reference to an instance method on a obj.
+     3> Reference to an instance method on a type.
+     4> Reference to an Construcotr.
+
+//with out method references 
+     static List<Car> getCars(List<Car> data){
+                return data.streams().map(x - > x.toString()).collect(Collection.toList);
+
+     }
+//with method References
+    static List<Car> getCars(List<Car> data){
+        return data.streams().map(i :: toString).collect(Collection.toList());
+
+    }
+3> Default Methods :
+     Log(String message);
+     we add another method to interface : default Log(String message,Date date); --> this default keyword allows us to implemetation of method inside the interface.
+
+4> Type Annotaion:
+    use the on :
+        a local variable defination.
+        Construcotr calls
+        type casting
+        generics
+        throw clause and more
+
+        Ex:
+          @NotNull String varibale = "not null";
+
+          List<@Email String> out ; --> ensure all the record inside it are as Email format.
+
+Repeating Annotations.
+    //we are creating a @Notify Annotations 
+    @Repeatable(Notifications.class)
+    public @Interface Notify{
+        String email();
+    }
+    public @interface Notifications{
+        Notify[] value();
+    }
+
+Switch_Case modification:
+   //before
+    class Number{
+        int num=5;
+        switch(num){
+            case 1 (num %2==0):
+               if(num /2 == 0){
+                Syste.out.println("ok");
+               }
+               break;
+            case 2:
+               System.out.println("Not-ok");
+               break;
+            default:
+                System.out.pritnln("sdb");
+        }
+    }
+
+    //after:
+     No reqired of break statement and yield keyword to return required output after the block of lines executes in case 
+
+    class Number{
+        int num = 1;
+        num = switch(num){
+            case 1 -> {
+                System.out.println("THis is val 1");
+                yield 1;
+            }
+            case 2 -> {
+                System.out.println("THisis val 2){
+                    yield 2;
+                }
+            }
+            default -> {
+                System.out.println("No value");
+                yield 0;
+            }
+        }
+    }
+
+    //InstanceOf --Pattren Matching
