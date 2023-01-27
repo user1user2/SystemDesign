@@ -1,5 +1,5 @@
 Iterable-Iterator
 Comparable-Comparator
 Object-toString,hashcode,equals
-
+//
 //write code Collection.sort() in List<>(string,integer) and match with priorityQueues();
